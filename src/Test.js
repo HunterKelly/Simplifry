@@ -57,6 +57,7 @@ function Test() {
                     <Route path="/SummerMix" element={<SummerMix />} />
                     <Route path="/WinterMix" element={<WinterMix />} />
                     <Route path="/Oust" element={<Oust />} />
+                    <Route path="/Elementz" element={<Elementz />} />
                 </Routes>
             </Router>
 
