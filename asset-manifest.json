@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7BSimplifry%7D/static/css/main.b26ccf38.css",
+    "main.js": "/%7BSimplifry%7D/static/js/main.bc413843.js",
+    "index.html": "/%7BSimplifry%7D/index.html",
+    "main.b26ccf38.css.map": "/%7BSimplifry%7D/static/css/main.b26ccf38.css.map",
+    "main.bc413843.js.map": "/%7BSimplifry%7D/static/js/main.bc413843.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b26ccf38.css",
+    "static/js/main.bc413843.js"
+  ]
+}
