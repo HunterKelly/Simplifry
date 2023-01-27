@@ -59,7 +59,7 @@ function WinterMix() {
             <h3 id='answer'></h3>
             <p id='space'></p>
 
-            <h2> Or</h2><br></br>
+            <h2>Or</h2>
             <h3>How many acres is the job?</h3>
             <input id='Acres' placeholder='Acres of Land'></input>
             <button onClick={WinterAcreCalculate}>Calculate</button>
