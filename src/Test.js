@@ -16,7 +16,7 @@ import Elementz from './Herbicides/Elementz';
 
 
 //TODO: Add area calculatons
-
+//50 gallons covers 1 acre or 1 gallon covers .02 of an acre
 
 //-----------------------------------------
 //Quick Measurement referal charts
@@ -33,7 +33,7 @@ import Elementz from './Herbicides/Elementz';
 //Ranger Pro is 1.92 Oz per gallon or 96 oz per 50 gallons
 
 //-----------------------------------------
-//Mixes
+//Mixes 
 
 //SummerMix is: Dye, Ranger Pro, Oust, Element, Imazapere, and Boost.
 //WinterMIs is: Dye, Ranger Pro, Esplanade, Imazapere, Boost

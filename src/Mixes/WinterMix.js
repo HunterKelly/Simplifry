@@ -24,6 +24,26 @@ function WinterMix() {
             document.getElementById("answer").innerHTML += " " + Theanswer + " Ounces of " + key + "<br></br>";
         }
     }    
+
+    function WinterAcreCalculate() {
+        var Acre = document.getElementById("Acres").value;
+        var acre = parseFloat(Acre);
+        const maps = new Map();
+        maps.set('Dye', 0.32);
+        maps.set('Ranger Pro', 1.92);
+        maps.set('Oust', 0.08);
+        maps.set('Element', 0.32);
+        maps.set('Imazapyr', 0.56);
+        maps.set('Boost', 0.32);
+        var gallons = acre * 50;
+        for (const [keys, values] of maps) {
+            var answers = values * gallons;
+            var Theanswers = +answers.toFixed(2);
+            document.getElementById("TheHeader").innerHTML = "You must add: ";
+            document.getElementById("TheAnswer").innerHTML += " " + Theanswers + " Ounces of " + keys + "<br></br>";
+        }
+        document.getElementById("Gallons").innerHTML = "To " + gallons + " gallons of water";
+    }
     return (
 
         <div>
@@ -38,6 +58,15 @@ function WinterMix() {
             <h3 id='Header'></h3>
             <h3 id='answer'></h3>
             <p id='space'></p>
+
+            <h2> Or</h2><br></br>
+            <h3>How many acres is the job?</h3>
+            <input id='Acres' placeholder='Acres of Land'></input>
+            <button onClick={WinterAcreCalculate}>Calculate</button>
+            <h3 id='TheHeader'></h3>
+            <h3 id='TheAnswer'></h3>
+            <h3 id='Gallons'></h3>
+            
         </div>
     );
 

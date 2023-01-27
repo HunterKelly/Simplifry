@@ -33,7 +33,7 @@ function Home() {
     function Elementz() {
         navigate('./Elementz');
     }
-asd
+
     return (
         <div>
             <div>
