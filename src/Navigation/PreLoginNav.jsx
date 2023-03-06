@@ -8,25 +8,27 @@ import '../MasterStyles.css';
 
 
 
-function Nav() {
+function PreLoginNav() {
     const navigate = useNavigate();
 
     function takemeHome() {
+        navigate('/home');
+    }
+    function signMeUp() {
+        navigate('/signup');
+    }
+    function LoginScreen() {
         navigate('/');
     }
 
     return (
         <div className="Nav">
-            <button onClick={takemeHome}>Home</button>
-
+            <button onClick={signMeUp}>Create new Account</button>
+            <button onClick={LoginScreen}>Login</button>
 
         </div>
 
 
     );
 }
-
-
-
-
-export default Nav;
+export default PreLoginNav;

@@ -13,10 +13,12 @@ import SummerMix from './Mixes/SummerMix';
 import WinterMix from './Mixes/WinterMix';
 import Oust from './Herbicides/Oust';
 import Elementz from './Herbicides/Elementz';
+import WeatherDisplay from './Weather/weather';
+import Login from './Login';
+import PreLoginNav from './Navigation/PreLoginNav';
+import SignUp from './Account/SignUp';
 
-
-//TODO: Add area calculatons
-//50 gallons covers 1 acre or 1 gallon covers .02 of an acre
+//TODO: 
 
 //-----------------------------------------
 //Quick Measurement referal charts
@@ -48,7 +50,9 @@ function Test() {
 
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Login />} />
+                    <Route path="/signup" element={<SignUp />} />
+                    <Route path="/home" element={<Home />} />
                     <Route path="/Glyphosate" element={<Glyphosate />} />
                     <Route path="/Esplanade" element={<Esplanade />} />
                     <Route path="/Dye" element={<Dye />} />
@@ -58,6 +62,8 @@ function Test() {
                     <Route path="/WinterMix" element={<WinterMix />} />
                     <Route path="/Oust" element={<Oust />} />
                     <Route path="/Elementz" element={<Elementz />} />
+                    <Route path="/Weather" element={<WeatherDisplay />} />
+                    
                 </Routes>
             </Router>
 

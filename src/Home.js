@@ -1,78 +1,89 @@
 import Navigation from "../src/Navigation/Navigation";
 import { useNavigate } from "react-router-dom";
 import './MasterStyles.css';
+import WeatherDisplay from "./Weather/weather";
+
 
 
 function Home() {
     const navigate = useNavigate();
 
-    function Glyphosate() {
-        navigate('./Glyphosate');
+    function navigateTo(destination) {
+        navigate(`./${destination}`);
     }
-    function Esplanade() {
-        navigate('./Esplanade');
-    }
-    function Dye() {
-        navigate('./Dye');
-    }
-    function Boost() {
-        navigate('./Boost');
-    }
-    function Imazapyr() {
-        navigate('./Imazapyr');
-    }
-    function SummerMix() {
-        navigate('./SummerMix');
-    }
-    function WinterMix() {
-        navigate('./WinterMix');
-    }
-    function Oust() {
-        navigate('./Oust');
-    }
-    function Elementz() {
-        navigate('./Elementz');
-    }
+    const buttonStyle = {
+        
+       
+    };
 
     return (
         <div>
             <div>
                 <Navigation />
             </div>
-            <h1>Welcome to Simplifry</h1> 
+            <div>
+                <WeatherDisplay />
+            </div>
+
+            <h1>Welcome to Simplifry</h1>
             <h3>Click on the mix you are using</h3>
-            <button onClick={SummerMix}>
-                SummerMix
+            <button onClick={() => navigateTo('SummerMix')} style={buttonStyle}>
+                Summer Mix
             </button>
-            <button onClick={WinterMix}>
-                WinterMix
-            </button><br></br><br></br>
+            <button onClick={() => navigateTo('WinterMix')} style={buttonStyle}>
+                Winter Mix
+            </button>
+            <br /><br />
 
-            <h3> Or Click the herbicide you are using.</h3>
-            <button onClick={Glyphosate}>
-                Ranger Pro
-            </button>
-            <button onClick={Esplanade}>
-                Esplanade
-            </button>
-            <button onClick={Dye}>
-                Dye
-            </button>
-            <button onClick={Boost}>
-                Boost
-            </button>
-            <button onClick={Imazapyr}>
-                Imazapyr
-            </button>
-            <button onClick={Oust}>
-                Oust
-            </button>
-            <button onClick={Elementz}>
-                Element
-            </button>
-           
+            <h3>Or Click the herbicide you are using.</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <button onClick={() => navigateTo('Glyphosate')} style={buttonStyle}>
+                                Glyphosate - Weed Killer
+                            </button>
+                        </td>
+                        <td>
+                            <button onClick={() => navigateTo('Esplanade')} style={buttonStyle}>
+                                Esplanade - Broadleaf Weed Control
+                            </button>
+                        </td>
+                        <td>
+                            <button onClick={() => navigateTo('Dye')} style={buttonStyle}>
+                                Dye - Helps See Where You've Sprayed
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onClick={() => navigateTo('Boost')} style={buttonStyle}>
+                                Boost - Lawn Growth Enhancer
+                            </button>
+                        </td>
+                        <td>
+                            <button onClick={() => navigateTo('Imazapyr')} style={buttonStyle}>
+                                Imazapyr - Brush and Vine Control
+                            </button>
+                        </td>
+                        <td>
+                            <button onClick={() => navigateTo('Oust')} style={buttonStyle}>
+                                Oust - Invasive Weed Control
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onClick={() => navigateTo('Elementz')} style={buttonStyle}>
+                                Elementz - Liquid Fertilizer
+                            </button>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        );
+    );
 }
 export default Home;
