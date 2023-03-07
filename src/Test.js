@@ -17,6 +17,7 @@ import WeatherDisplay from './Weather/weather';
 import Login from './Login';
 import PreLoginNav from './Navigation/PreLoginNav';
 import SignUp from './Account/SignUp';
+import CustomMix from './Mixes/CustomMix';
 
 //TODO: 
 
@@ -63,6 +64,7 @@ function Test() {
                     <Route path="/Oust" element={<Oust />} />
                     <Route path="/Elementz" element={<Elementz />} />
                     <Route path="/Weather" element={<WeatherDisplay />} />
+                    <Route path="/CustomMix" element={<CustomMix />} />
                     
                 </Routes>
             </Router>

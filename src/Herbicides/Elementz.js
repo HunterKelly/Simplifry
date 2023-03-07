@@ -30,7 +30,6 @@ function Element() {
             <h1>How many gallons of water are in your tank?</h1>
             <input id="Water" className='water' placeholder="Gallons of water"></input>
             <button onClick={calculateElement}>Calculate</button>
-
             <h1 id='answer'></h1>
         </div>
     );

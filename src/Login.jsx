@@ -45,17 +45,26 @@ function Login() {
         <>
         <div>
                 <PreLoginNav />
-            </div>
-        <form onSubmit={handleSubmit}>
-            <label>
-                Email:
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-            </label>
-            <label>
-                Password:
-                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-            </label>
-            <button type="submit">Log in</button>
+        </div>
+
+            <div>
+                <h1>Welcome to Simplifry</h1>
+            </div>    
+            <h3>Please Login to Continue</h3>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    Email:
+                    <br />
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                </label>
+                <br />
+                <label>
+                    Password:
+                    <br />
+                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                </label>
+                <br />
+                <button type="submit">Log in</button>
             </form>
         </>
     );

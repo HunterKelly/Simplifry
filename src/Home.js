@@ -9,7 +9,7 @@ function Home() {
     const navigate = useNavigate();
 
     function navigateTo(destination) {
-        navigate(`./${destination}`);
+        navigate(`/${destination}`);
     }
     const buttonStyle = {
         
@@ -32,6 +32,9 @@ function Home() {
             </button>
             <button onClick={() => navigateTo('WinterMix')} style={buttonStyle}>
                 Winter Mix
+            </button>
+            <button onClick={() => navigateTo('CustomMix')} style={buttonStyle}>
+                Custom Mix
             </button>
             <br /><br />
 
